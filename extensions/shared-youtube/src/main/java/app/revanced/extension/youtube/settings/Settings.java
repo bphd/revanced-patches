@@ -388,6 +388,12 @@ public class Settings extends BaseSettings {
         migrateOldSettingToNew(DEPRECATED_HIDE_PLAYER_FLYOUT_VIDEO_QUALITY_FOOTER, HIDE_PLAYER_FLYOUT_VIDEO_QUALITY_FOOTER);
 
         // endregion
+
+        // region SB import/export callbacks
+
+        Setting.addImportExportCallback(SponsorBlockSettings.SB_IMPORT_EXPORT_CALLBACK);
+
+        // endregion
     }
 }
 
